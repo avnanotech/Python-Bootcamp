@@ -12,10 +12,6 @@ def load_data(nrows):
     data.rename(lowercase, axis='columns', inplace=True)
     data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
     return data
-Copy
-You'll notice that load_data is a plain old function that downloads some data, puts it in a Pandas dataframe, and converts the date column from text to datetime. The function accepts a single parameter (nrows), which specifies the number of rows that you want to load into the dataframe.
-
-Now let's test the function and review the output. Below your function, add these lines:
 
 # Create a text element and let the reader know the data is loading.
 data_load_state = st.text('Loading data...')
