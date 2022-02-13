@@ -33,6 +33,6 @@ components.html(
 </main>
 </body>
     """,
-    height=600,
+    height=100%,
 )
 
