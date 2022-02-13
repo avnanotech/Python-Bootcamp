@@ -1,3 +1,5 @@
+from html.parser import HTMLParser
+
 # Definisanje matrica
 
 matx1 = [[-2, 2, -3], [-1, 1, 3], [2, 0, -1]]
@@ -47,6 +49,11 @@ def mymatrix():
       for j in range(3):
          pmatx[i][j] = matx1[j][0] * matx2[0][j]+matx1[j][1] * matx2[1][j]+matx1[j][2] * matx2[2][j]
     print(pmatx)
+    
+    
+parser = MyHTMLParser()
+parser.feed('<html><head><title>Test</title></head>'
+            '<body><h1>Parse me!</h1></body></html>')
 
 
 if __name__ == '__main__':
