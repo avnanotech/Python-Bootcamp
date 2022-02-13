@@ -33,6 +33,7 @@ components.html(
 </main>
 </body>
     """,
-  
+  1000,
+   600,
 )
 
