@@ -33,8 +33,8 @@ def mymatrix():
     print("Zbir matrice A i matrice B")
 
     smatx=[[0,0,0],[0,0,0],[0,0,0]]
-    for i in range(3) :
-      for j in range(3) :
+    for i in range(len(smatx)) :
+      for j in range(len(smatx[0])):
         smatx[i][j]=matx1[i][j]+matx2[i][j]
     print(smatx)
 
@@ -43,10 +43,10 @@ def mymatrix():
     print("Proizvod matrice A i matrice B")
 
     pmatx = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-    for i in range(3):
-      for j in range(3):
+    for i in range(len(pmatx)):
+      for j in range(len(pmatx[0])):
           pmatx[i][j] =0
-          for k in range(3):
+          for k in range(len(pmatx)):
             pmatx[i][j] = pmatx[i][j] +matx1[i][k]*matx2[k][j]
     print(pmatx)
 
