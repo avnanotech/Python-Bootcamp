@@ -1,36 +1,36 @@
-# Definisanje matrica
+# Definition of the matrix
 
 matx1 = [[-2, 2, -3], [-1, 1, 3], [2, 0, -1]]
 matx2 = [[1, 3, 2], [ 1, 0,0], [1,2, 2]]
 
 
-# Operacije sa matricama
+# Operations with the matrix
 
 def mymatrix():
 
-    # Matrica A
-    print("Matrica A")
+    # Matrix A
+    print("Matrix A")
     print(matx1)
 
     det1=matx1[0][0]*(matx1[1][1]*matx1[2][2]-matx1[2][1]*matx1[1][2])-\
         matx1[1][0]*(matx1[0][1]*matx1[2][2]-matx1[2][1]*matx1[0][2])+\
         matx1[2][0]*(matx1[0][1]*matx1[1][2]-matx1[1][1]*matx1[0][2])
-    print("Determinanta matrica 1  je",det1)
+    print("The determinant of matrix A is ",det1)
 
 
-    # Matrica B
-    print("Matrica B")
+    # Matrix B
+    print("Matrix B")
     print(matx2)
 
 
     det2=matx2[0][0]*(matx2[1][1]*matx2[2][2]-matx2[1][2]*matx2[2][1])-\
         matx2[1][0]*(matx2[0][1]*matx2[2][2]-matx2[2][1]*matx2[0][2])+\
         matx2[2][0]*(matx2[0][1]*matx2[1][2]-matx2[1][1]*matx2[0][2])
-    print("Determinanta matrica 2  je",det2)
+    print("The determinant of matrix B is ",det2)
 
-  # Zbir matrice A i matrice B
+  # The sum of the matrix A and matrix B
 
-    print("Zbir matrice A i matrice B")
+    print("The sum of the matrix A and matrix B")
 
     smatx=[[0,0,0],[0,0,0],[0,0,0]]
     for i in range(len(smatx)) :
@@ -38,9 +38,9 @@ def mymatrix():
         smatx[i][j]=matx1[i][j]+matx2[i][j]
     print(smatx)
 
-    # Proizvod matrice A i matrice B
+    # The product of the matrix A and matrix B
 
-    print("Proizvod matrice A i matrice B")
+    print("The product of the matrix A and matrix B")
 
     pmatx = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
     for i in range(len(pmatx)):
